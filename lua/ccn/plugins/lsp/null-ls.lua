@@ -19,8 +19,8 @@ null_ls.setup({
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
 		formatting.black, -- js/ts formatter
 		formatting.stylua, -- lua formatter
-		diagnostics.pylint	
-    },
+		diagnostics.pylint,
+	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
 		if current_client.supports_method("textDocument/formatting") then

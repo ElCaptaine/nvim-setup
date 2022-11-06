@@ -19,11 +19,10 @@ end
 mason.setup()
 
 mason_lspconfig.setup({
-    ensure_installed = {
-        "jsonls",
-        "sumneko_lua",
-        "jedi_language_server",
-    }
+	ensure_installed = {
+		"sumneko_lua",
+		"jedi_language_server",
+	},
 })
 
 mason_null_ls.setup({
@@ -31,7 +30,7 @@ mason_null_ls.setup({
 	ensure_installed = {
 		"black", -- python formatter
 		"stylua", -- lua formatter --
-        "pylint" -- python linter
+		"pylint", -- python linter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
